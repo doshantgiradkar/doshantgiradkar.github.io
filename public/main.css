@@ -1,0 +1,128 @@
+:root {
+    --bg-color: #0E0E1B;
+    --link-color: #A0ECD0;
+    --text-color: #F8F5F5;
+    --btn-bg-color: #4EB58F;
+    background-color: var(--bg-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    z-index: 1;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-family: "Parisienne", cursive;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+nav .right a {
+    color: var(--link-color);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0 .5rem;
+}
+
+nav .right a:last-child {
+    background-color: var(--btn-bg-color);
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    font-weight: 400;
+}
+
+.hero {
+    padding: 20vh 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hero .text {
+    max-width: 600px;
+}
+
+.hero .text h1 {
+    padding: 0 0 1rem 0;
+}
+
+.hero .text p {
+    padding: 0 0 1.2rem 0;
+}
+
+.hero .text div a {
+    padding: 0.5rem 1rem;
+    margin-right: .5rem;
+    border: 2px solid var(--link-color);
+    border-radius: .5rem;
+}
+
+.hero .pic {
+    width: 40vw;
+    height: 40vw;
+    max-width: 300px;
+    max-height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10%;
+    background-image: url('/me.jpeg');
+}
+
+@media(max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: .5rem 1rem;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    nav .right a:last-child {
+        background-color: var(--bg-color);
+        padding: 0;
+    }
+
+    .hero {
+        padding: 10vh .25rem;
+        flex-direction: column-reverse;
+
+
+        .text {
+            text-align: center;
+        }
+    }
+}
