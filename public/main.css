@@ -115,7 +115,9 @@ nav .right a:last-child {
         background-color: var(--bg-color);
         padding: 0;
     }
+}
 
+@media(max-width:1024px) {
     .hero {
         padding: 10vh .25rem;
         flex-direction: column-reverse;
