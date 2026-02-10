@@ -1,11 +1,10 @@
----
-
----
-
+<script>
+	import { resolve } from "$app/paths";
+</script>
 <header>
     <nav>
         <div class="left">
-            <a href="/" class="title">Doshant Giradkar</a>
+            <a href={resolve("/")} class="title">Doshant Giradkar</a>
         </div>
         <div class="right">
             <a href="https://github.com/doshantgiradkar" target="_blank">
