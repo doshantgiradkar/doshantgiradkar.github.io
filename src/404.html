@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>404 | Doshant Giradkar</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			:root {
+				--bg-color: #0e0e1b;
+				--link-color: #a0ecd0;
+				--text-color: #f8f5f5;
+				--btn-bg-color: #4eb58f;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				color: var(--text-color);
+			}
+
+			body {
+				min-height: 100vh;
+				background-color: var(--bg-color);
+				font-family: "Poppins", sans-serif;
+				display: flex;
+				flex-direction: column;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			nav {
+				padding: 0.5rem 2rem;
+				display: flex;
+				justify-content: space-between;
+				height: 4rem;
+				align-items: center;
+			}
+
+			nav .left a {
+				color: var(--text-color);
+				font-family: "Parisienne", cursive;
+				font-size: 2rem;
+				font-weight: 500;
+			}
+
+			nav .right a {
+				color: var(--link-color);
+				font-size: 1.2rem;
+				font-weight: 300;
+				margin: 0 0.5rem;
+			}
+
+			nav .right a:last-child {
+				background-color: var(--btn-bg-color);
+				padding: 0.5rem 1rem;
+				border-radius: 0.25rem;
+				font-weight: 400;
+			}
+
+			main {
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 8vh 2rem 6vh;
+				text-align: center;
+			}
+
+			.card {
+				max-width: 560px;
+				border: 1px solid rgba(160, 236, 208, 0.2);
+				border-radius: 1.5rem;
+				padding: 3rem 2.5rem;
+				background: rgba(14, 14, 27, 0.6);
+				box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+			}
+
+			.eyebrow {
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				font-size: 0.75rem;
+				color: var(--link-color);
+				margin-bottom: 1rem;
+			}
+
+			h1 {
+				font-size: clamp(4rem, 10vw, 7rem);
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+			}
+
+			p {
+				opacity: 0.85;
+				line-height: 1.6;
+				margin-bottom: 2rem;
+			}
+
+			.actions {
+				display: flex;
+				justify-content: center;
+				gap: 1rem;
+				flex-wrap: wrap;
+			}
+
+			.actions a {
+				padding: 0.6rem 1.4rem;
+				border: 2px solid var(--link-color);
+				border-radius: 0.6rem;
+				font-weight: 500;
+			}
+
+			.actions a.secondary {
+				border-color: rgba(160, 236, 208, 0.45);
+				background: rgba(78, 181, 143, 0.15);
+			}
+
+			@media (max-width: 720px) {
+				body {
+					font-size: 14px;
+				}
+
+				nav {
+					padding: 0.5rem 1rem;
+				}
+
+				nav .right a span {
+					display: none;
+				}
+
+				nav .right a:last-child {
+					background-color: var(--bg-color);
+					padding: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="left">
+				<a href="/">Doshant</a>
+			</div>
+			<div class="right">
+				<a href="/skills"><span>Skills</span></a>
+				<a href="/projects"><span>Projects</span></a>
+				<a href="/contact"><span>Contact</span></a>
+				<a href="/contact">Hire Me</a>
+			</div>
+		</nav>
+
+		<main>
+			<section class="card">
+				<p class="eyebrow">Page not found</p>
+				<h1>404</h1>
+				<p>The page you're looking for doesn't exist or was moved.</p>
+				<div class="actions">
+					<a href="/">Back home</a>
+					<a class="secondary" href="/projects">View projects</a>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
