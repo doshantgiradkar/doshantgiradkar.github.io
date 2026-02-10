@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 :root {
     --bg-color: #0E0E1B;
     --link-color: #A0ECD0;
@@ -58,8 +60,9 @@ nav .right a:last-child {
     font-weight: 400;
 }
 
-.hero {
+#hero {
     padding: 20vh 2rem;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,26 +70,26 @@ nav .right a:last-child {
     gap: 2rem;
 }
 
-.hero .text {
+#hero .text {
     max-width: 600px;
 }
 
-.hero .text h1 {
+#hero .text h1 {
     padding: 0 0 1rem 0;
 }
 
-.hero .text p {
+#hero .text p {
     padding: 0 0 1.2rem 0;
 }
 
-.hero .text div a {
+#hero .text div a {
     padding: 0.5rem 1rem;
     margin-right: .5rem;
     border: 2px solid var(--link-color);
     border-radius: .5rem;
 }
 
-.hero .pic {
+#hero .pic {
     width: 40vw;
     height: 40vw;
     max-width: 300px;
@@ -118,7 +121,7 @@ nav .right a:last-child {
 }
 
 @media(max-width:1024px) {
-    .hero {
+    #hero {
         padding: 10vh .25rem;
         flex-direction: column-reverse;
 

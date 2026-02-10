@@ -1,8 +1,7 @@
----
-
----
-
-<section class="hero">
+<script>
+	import { resolve } from "$app/paths";
+</script>
+<section id="hero">
     <div class="text">
         <h1>Hi, I am Doshant</h1>
         <p>
@@ -12,15 +11,15 @@
             high‐performance applications.
         </p>
         <div>
-            <a href="#skills">
+            <a href={resolve("/skills")}>
                 <i class="fa-solid fa-code"></i>
                 <span>Skills</span>
             </a>
-            <a href="#projects">
+            <a href={resolve("/projects")}>
                 <i class="fa-solid fa-code-branch"></i>
                 <span>Projects</span>
             </a>
-            <a href="#contact">
+            <a href={resolve("/contact")}>
                 <i class="fa-solid fa-envelope"></i>
                 <span>Contact</span>
             </a>
